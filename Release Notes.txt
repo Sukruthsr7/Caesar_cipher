@@ -1,0 +1,15 @@
+Version: 1.0
+
+Initial Release
+Includes core encryption and decryption functionality for the Caesar Cipher.
+Provides a user-friendly command-line interface.
+Converted to a standalone executable using PyInstaller for easy distribution.
+Known Issues:
+
+No known issues at this time.
+Future Enhancements:
+
+Implement support for other ciphers (e.g., Vigenère cipher, ROT13).
+Add a graphical user interface (GUI) for easier interaction.
+Improve security by incorporating stronger encryption methods.
+Include features for saving and loading encrypted/decrypted messages.
