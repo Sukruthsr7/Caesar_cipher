@@ -1,16 +1,4 @@
 def caesar_cipher(text, shift, mode='encrypt'):
-    """
-    Encrypts or decrypts a message using the Caesar Cipher.
-
-    Args:
-        text: The input text to be encrypted or decrypted.
-        shift: The number of positions to shift the letters.
-        mode: 'encrypt' for encryption, 'decrypt' for decryption (default: 'encrypt').
-
-    Returns:
-        The encrypted or decrypted text.
-    """
-
     result = ""
     alphabet = "abcdefghijklmnopqrstuvwxyz"
 
@@ -20,7 +8,7 @@ def caesar_cipher(text, shift, mode='encrypt'):
             index = alphabet.find(char)
             if mode == 'encrypt':
                 new_index = (index + shift) % 26
-            else:  # 'decrypt'
+            else:
                 new_index = (index - shift) % 26
             result += alphabet[new_index]
         else:
